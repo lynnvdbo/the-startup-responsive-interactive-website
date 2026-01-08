@@ -168,7 +168,7 @@ h2 {
 
   &:hover {
     background: transparent;
-    color: var(--maya-blue);
+    color: var(--white);
     border: 2px solid var(--maya-blue);
   }
 }
