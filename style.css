@@ -15,6 +15,18 @@ body {
 
 header {
     background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+}
+
+.assist-digital-logo {
+    margin: 1em;
+}
+
+.menu-btn {
+    background-color: transparent;
+    border: none;
+    margin: 1em;
 }
 
 .main-nav ul {
