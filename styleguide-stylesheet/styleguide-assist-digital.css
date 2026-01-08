@@ -3,6 +3,32 @@
    https://css-tricks.com/css-cascade-layers/ 
    */
 
+@font-face {
+  font-family: "DIN 2014";
+  src:url('../fonts/DIN-2014_Light.otf');
+  font-weight:300;
+}  
+
+@font-face {
+  font-family: "DIN 2014";
+  src:url('../fonts/DIN-2014_Regular.otf');
+  font-weight:400;
+}  
+
+@font-face {
+  font-family: "DIN 2014";
+  src:url('../fonts/DIN-2014_Demi.otf');
+  font-weight:600;
+}  
+
+@font-face {
+  font-family: "DIN 2014";
+  src:url('../fonts/DIN-2014_Bold.otf');
+  font-weight:700;
+}  
+
+
+
 @layer styleguide {
   :root {
     /* Colors Primary */
