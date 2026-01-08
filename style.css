@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(font-family);
+    background-color: var(--maastricht-blue);
+    color: var(--white);
+    line-height: var(--line-height-text);
+    letter-spacing: 3%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--white);
+}
+
+.main-nav ul {
+    display: none;
+}
+
+.main-nav a {
+    color: var(--black);
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.main-nav a:hover {
+    color: var(--black);
+    list-style-type: none;
+    text-decoration: underline;
+}
+
+.banner-foto {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+h1 {
+    margin: 0.2em;
+}
+
+.overlay {
+    position: absolute;
+    top: 26%;
+    left: 39%;
+    transform: translate(-50%, -50%);
+}
+
+h2 {
+    padding-bottom: 0.4em;
+}
+
+/* 3 teksten + afbeeldingen */
+.viewer, .configurator, .full-experience {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.viewer ul, .configurator ul, .full-experience ul {
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-bottom: 2.2em;
+}
+
+.pijltje {
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    list-style: none;
+    padding-left: 25px;
+    position: relative;
+
+    &::before {
+    content: "⭢"; 
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px; 
+    color: var(--white); 
+    }
+}
+}
+
+.viewer img, .configurator img, .full-experience img {
+    padding-bottom: 2em;
+    display: flex;
+}
+
+.foto-rechts {
+    margin-right: -2em;
+    margin-left: auto;
+}
+
+.foto-links {
+    margin-left: -2em;
+    margin-right: auto;
+}
+
+.quote {
+    background-color: var(--space-cadet);
+    padding: 1em;
+    text-align: center;
+    margin-bottom: 1.5em;
+    font-size: var(--font-size-xl);
+}
+
+.quote h3 {
+    margin: 0.5em;
+}
+
+/* span kleur verandering in de quote/zin */
+.speciale-kleur {
+    color: var(--carolina-blue);
+}
+
+.assets-implemenatation {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+/* illustatie afbeelding */
+.assets-implemenatation img { 
+    width: 100%;
+    margin-top: 2.5em;
+    margin-bottom: 2em;
+}
+
+.get-in-touch {
+    background-color: var(--dark-cerulean);
+    padding: 0.5rem, 1em, 0.5em, 1em;
+} 
+
+.get-in-touch p {
+    padding-left: 2em;
+    padding-top: 1.5em
+}
+
+.get-in-touch h3 {
+    margin: 0.5em 1em 0.7em 1em;
+}
+
+
+/* button Contact us */
+.Contact-us {
+  padding: var(--button-size);
+  letter-spacing: 3%;
+  background-color: var(--carolina-blue);
+  border: 2px solid var(--carolina-blue);
+  border-radius: var(--border-radius);
+  font-family: var(--font-family);
+  color: var(--white);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+
+  &:focus {
+    outline-offset: 0.1em;
+  }
+
+  &:active {
+    border: 2px solid var(--carolina-blue);
+  }
+
+  &:hover {
+    background: transparent;
+    color: var(--maya-blue);
+    border: 2px solid var(--maya-blue);
+  }
+}
+
+
+/* button Learn more about 270 */
+.Learn-more-about-270 {
+  padding: var(--button-size);
+  letter-spacing: 3%;
+  background-color: transparent;
+  border: 2px solid var(--maya-blue);
+  border-radius: var(--border-radius);
+  font-family: var(--font-family);
+  color: var(--maya-blue);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+
+  &:focus {
+    outline-offset: 0.1em;
+  }
+
+  &:active {
+    border: 2px solid var(--carolina-blue);
+  }
+
+  &:hover {
+    background: var(--carolina-blue);
+    color: var(--white);
+    border: 2px solid var(--carolina-blue);
+  }
+}
+
+.buttons {
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.buttons a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+footer {
+    background-color: var(--white);
+}
+
+footer p, .sublogo {
+    color: var(--black);
+    padding-left: 1em;
+    padding-top: 0.4em;
+}
+
+.sub-logo {
+    padding-left: 1em;
+    padding-top: 1em;
+}
+
+footer a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--dark-cerulean);
+    text-decoration: underline;
+}
+
+footer ul {
+    padding-left: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
