@@ -1,0 +1,274 @@
+/* We gebruiken hier Cascade layers, wat mogelijke problemen met Specificiteit voorkomt
+   https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Cascade_layers
+   https://css-tricks.com/css-cascade-layers/ 
+   */
+
+@layer styleguide {
+  :root {
+    /* Colors Primary */
+    --black: hsla(0,0%,4%,1);
+    --maastricht-blue: hsla(209,74%,12%,1);
+    --lapis-lazuli: hsla(203,70%,38%,1);
+    --carolina-blue: hsla(203,62%,58%,1);
+    --white: hsla(0,0%,100%,1);
+
+    /* Colors Secondary */
+    --space-cadet: hsla(208,62%,19%,1);
+    --dark-cerulean: hsla(208,63%,28%,1);
+    --cyan-blue-azure: hsla(203,53%,50%,1);
+    --maya-blue: hsla(203,83%,70%,1);
+    --lights-lapis-lazuli: hsla(202,43%,88%,1);
+
+    /* Line height */
+    --line-height-heading: 1.2;
+    --line-height-text: 1.4;
+
+    /* Button */
+    --button-size: 10px 25px;
+    --border-radius: 20px;
+
+    /* Typographie */
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-demi: 600;
+    --font-weight-bold: 700;
+
+    --font-family: "DIN 2014", sans-serif;
+
+    --font-size-xs: 1rem; /* 16px */
+    --font-size-s: 1.25rem; /* 20px */
+    --font-size-m: 1.5rem; /* 24px */
+    --font-size-l: 1.75rem; /* 28px */
+    --font-size-xl: 2rem; /* 32px */
+
+    --font-size-heading-xs: 2rem; /* 32px */
+    --font-size-heading-s: 3rem; /* 48px */
+    --font-size-heading-m: 4rem; /* 64px */
+    --font-size-heading-l: 4.5rem; /* 72px */
+    --font-size-heading-xl: 6rem; /* 96px */
+  }
+
+  /* Color classes Primary*/
+  .black {
+    background: var(--black);
+  }
+
+  .maastricht-blue {
+    color: var(--white);
+    background: var(--maastricht-blue);
+  }
+
+  .lapis-lazuli {
+    background: var(--lapis-lazuli);
+  }
+
+  .carolina-blue {
+    background: var(--carolina-blue);
+  }
+
+  .white {
+    background: var(--white);
+    border: 0.5px solid var(--black);
+  }
+
+
+/* Color classes Secondary*/
+  .space-cadet {
+    background: var(--space-cadet);
+  }
+
+  .dark-cerulean {
+    color: var(--white);
+    background: var(--dark-cerulean);
+  }
+
+  .cyan-blue-azure {
+    color: var(--white);
+    background: var(--cyan-blue-azure);
+  }
+
+  .maya-blue {
+    background: var(--maya-blue);
+  }
+
+  .lights-lapis-lazuli {
+    background: var(--lights-lapis-lazuli);
+  }
+
+
+  
+  h1 {
+    font-size:var(--font-size-heading-m);
+    @media (width > 768px) { font-size:var(--font-size-heading-l); }
+    @media (width > 960px) { font-size:var(--font-size-heading-xl); }
+  }
+
+  h2 {
+    font-size:var(--font-size-heading-s);
+    @media (width > 768px) { font-size:var(--font-size-heading-m); }
+    @media (width > 960px) { font-size:var(--font-size-heading-l); }
+    font-weight:var(--font-weight-regular);
+  }
+
+  h3 {
+    font-size:var(--font-size-heading-xs);
+    @media (width > 768px) { font-size:var(--font-size-heading-s); }
+    @media (width > 960px) { font-size:var(--font-size-heading-m); }
+    font-weight:var(--font-weight-regular);
+  }
+
+
+  .font-size-l {
+    font-size:var(--font-size-m);
+    @media (width > 768px) { font-size:var(--font-size-l); }
+    @media (width > 960px) { font-size:var(--font-size-xl); }
+    font-weight:var(--font-weight-light);
+  }
+
+  .font-size-m {
+    font-size:var(--font-size-s);
+    @media (width > 768px) { font-size:var(--font-size-m); }
+    @media (width > 960px) { font-size:var(--font-size-l); }
+    font-weight:var(--font-weight-light);
+  }
+
+  .font-size-s {
+    font-size:var(--font-size-xs);
+    @media (width > 768px) { font-size:var(--font-size-s); }
+    @media (width > 960px) { font-size:var(--font-size-m); }
+    font-weight:var(--font-weight-light);
+  }
+
+  .details-text {
+    font-size:var(--font-size-xs);
+    @media (width > 768px) { font-size:var(--font-size-s); }
+    @media (width > 960px) { font-size:var(--font-size-m); }
+  }
+  
+
+  button, a {
+    font-size:var(--font-size-xs);
+    font-weight:var(--font-weight-demi);
+  }
+}
+
+
+body {
+  font-family: var(--font-family);
+
+  label,
+  table,
+  input,
+  button,
+  blockquote p {
+    font-family: var(--font-family);
+  }
+}
+
+
+
+/* Kleurenbolletjes */
+.figure-ad {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  code {
+    height: 100px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+  }
+
+  &:nth-of-type(1),
+  &:nth-of-type(3),
+  &:nth-of-type(6) {
+    code {
+      color: white;
+    }
+  }
+}
+
+
+/* ul en evt ol */
+.ul-assist-digital {
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    list-style: none;
+    padding-left: 25px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 16px;
+      height: 16px;
+      background-image: url("../assets/arrow-right.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+
+/* button Contact us */
+.Contact-us {
+  padding: var(--button-size);
+  letter-spacing: 3%;
+  background-color: var(--carolina-blue);
+  border: 2px solid var(--carolina-blue);
+  border-radius: var(--border-radius);
+  font-family: var(--font-family);
+  color: var(--white);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+
+  &:focus {
+    outline-offset: 0.1em;
+  }
+
+  &:active {
+    border: 2px solid var(--carolina-blue);
+  }
+
+  &:hover {
+    background: transparent;
+    color: var(--maya-blue);
+    border: 2px solid var(--maya-blue);
+  }
+}
+
+
+/* button Learn more about 270 */
+.Learn-more-about-270 {
+  padding: var(--button-size);
+  letter-spacing: 3%;
+  background-color: transparent;
+  border: 2px solid var(--maya-blue);
+  border-radius: var(--border-radius);
+  font-family: var(--font-family);
+  color: var(--maya-blue);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+
+  &:focus {
+    outline-offset: 0.1em;
+  }
+
+  &:active {
+    border: 2px solid var(--carolina-blue);
+  }
+
+  &:hover {
+    background: var(--carolina-blue);
+    color: var(--white);
+    border: 2px solid var(--carolina-blue);
+  }
+}
