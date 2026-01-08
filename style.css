@@ -36,6 +36,7 @@ header {
 .banner-foto {
     width: 100%;
     margin-bottom: 1em;
+    filter: brightness(77%); 
 }
 
 h1 {
