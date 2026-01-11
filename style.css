@@ -29,20 +29,22 @@ header {
     margin: 1em;
 }
 
-.main-nav ul {
-    display: none;
-}
+.main-nav {
+    ul {
+        display: none;
+    }
+ 
+    a {
+        color: var(--black);
+        list-style-type: none;
+        text-decoration: none;
 
-.main-nav a {
-    color: var(--black);
-    list-style-type: none;
-    text-decoration: none;
-}
-
-.main-nav a:hover {
-    color: var(--black);
-    list-style-type: none;
-    text-decoration: underline;
+        &:hover {
+        color: var(--black);
+        list-style-type: none;
+        text-decoration: underline;
+    }
+    }
 }
 
 .banner-foto {
@@ -120,10 +122,10 @@ h2 {
     text-align: center;
     margin-bottom: 1.5em;
     font-size: var(--font-size-xl);
-}
 
-.quote h3 {
-    margin: 0.5em;
+    .h3 {
+        margin: 0.5em;
+    }
 }
 
 /* span kleur verandering in de quote/zin */
@@ -134,28 +136,28 @@ h2 {
 .assets-implemenatation {
     margin-left: 2em;
     margin-right: 2em;
-}
 
-/* illustatie afbeelding */
-.assets-implemenatation img { 
-    width: 100%;
-    margin-top: 2.5em;
-    margin-bottom: 2em;
+    /* illustatie afbeelding */
+    img {
+        width: 100%;
+        margin-top: 2.5em;
+        margin-bottom: 2em;
+
+    }
 }
 
 .get-in-touch {
     background-color: var(--dark-cerulean);
-    padding: 0.5rem, 1em, 0.5em, 1em;
+
+    p {
+        padding-left: 2em;
+        padding-top: 1.5em
+    }
+
+    h3 {
+        margin: 0.5em 1em 0.7em 1em;
+    }
 } 
-
-.get-in-touch p {
-    padding-left: 2em;
-    padding-top: 1.5em
-}
-
-.get-in-touch h3 {
-    margin: 0.5em 1em 0.7em 1em;
-}
 
 
 /* button Contact us */
@@ -218,10 +220,10 @@ h2 {
 .buttons {
     text-align: center;
     padding-bottom: 2em;
-}
 
-.buttons a {
-    text-decoration: none;
+    a {
+        text-decoration: none;
+    }
 }
 
 footer {
@@ -242,18 +244,16 @@ footer p, .sublogo {
 footer a {
     color: var(--black);
     text-decoration: none;
-}
 
-footer a:hover {
-    color: var(--dark-cerulean);
-    text-decoration: underline;
+    &:hover {
+        color: var(--dark-cerulean);
+        text-decoration: underline;
+    }
 }
 
 footer ul {
     padding-left: 1em;
 }
-
-
 
 
 
