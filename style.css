@@ -142,7 +142,6 @@ h2 {
         width: 100%;
         margin-top: 2.5em;
         margin-bottom: 2em;
-
     }
 }
 
@@ -150,12 +149,14 @@ h2 {
     background-color: var(--dark-cerulean);
 
     p {
-        padding-left: 2em;
-        padding-top: 1.5em
+        font-size: var(--font-size-xl);
+        margin: 0.5em 1em 0.7em 1em;
     }
 
     h3 {
-        margin: 0.5em 1em 0.7em 1em;
+        padding-left: 2em;
+        padding-top: 1.5em;
+        font-size: var(--font-size-xs)
     }
 } 
 
