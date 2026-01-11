@@ -47,7 +47,7 @@ header {
     }
 }
 
-.banner-foto {
+.banner-picture {
     width: 100%;
     margin-bottom: 1em;
     filter: brightness(77%); 
@@ -80,7 +80,7 @@ h2 {
     margin-bottom: 2.2em;
 }
 
-.pijltje {
+.arrow {
   list-style-type: none;
   padding: 0;
 
@@ -106,12 +106,12 @@ h2 {
     display: flex;
 }
 
-.foto-rechts {
+.foto-right {
     margin-right: -2em;
     margin-left: auto;
 }
 
-.foto-links {
+.foto-left {
     margin-left: -2em;
     margin-right: auto;
 }
@@ -129,7 +129,7 @@ h2 {
 }
 
 /* span kleur verandering in de quote/zin */
-.speciale-kleur {
+.special-color {
     color: var(--carolina-blue);
 }
 
