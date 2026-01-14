@@ -44,7 +44,10 @@
                 <li>Works on all enviromenst</li>
                 <li>Boost your product experience!</li>
             </ul>
-            <img class="foto-right" src="assets/270-degrees-viewer.png" alt="live viewer of the 270 degrees in 3d" width="260">
+
+            <div id="viewer-container">
+            <!-- the live 3d viewer -->
+            <div class="js-270viewer foto-right" data-270-model="270logo" data-270-background="#ffffff" data-270-autorotate="true"></div>
         </section>
 
         <section class="configurator">
@@ -55,7 +58,11 @@
                 <li>High quality</li>
                 <li>Personalize your assets!</li>
             </ul>
-            <img class="foto-left" src="assets/afbeelding-cirkel.jpg" alt="circulare halftone design" width="260">
+            
+            <!-- <img class="foto-left" src="assets/afbeelding-cirkel.jpg" alt="circulare halftone design" width="270"> -->
+             <div id="viewer-container">
+            <!-- the live 3d viewer -->
+            <div class="js-270viewer foto-left" data-270-model="270logo" data-270-background="#D2E3ED" data-270-autorotate="false"></div>
         </section>
 
         <section class="full-experience">
@@ -66,7 +73,10 @@
                 <li>Tailor made</li>
                 <li>Distinguish yourself from the competition!</li>
             </ul>
-            <img class="foto-right" src="assets/270-degrees-viewer.png" alt="live viewer of the 270 degrees in 3d" width="260">
+
+            <div id="viewer-container">
+            <!-- the live 3d viewer -->
+            <div class="js-270viewer foto-right" data-270-model="270logo" data-270-background="#ffffff" data-270-autorotate="true"></div>
         </section>
         
         <div class="quote">
@@ -106,6 +116,8 @@
         </nav>
     </footer>
 
+    <script>window.TSDAPIKEY = 'rest-of-the-owl';</script>
+    <script defer src="https://api.270degrees.nl/api/script/latest/viewer.js"></script>
     <script defer src="scripts/script.js"></script>
     
 </body>

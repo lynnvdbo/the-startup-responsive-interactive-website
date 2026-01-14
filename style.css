@@ -13,7 +13,6 @@ body {
     padding: 0;
 }
 
-
 header {
     display: flex;
     background-color: var(--white);
@@ -175,6 +174,24 @@ h2 {
     padding-bottom: 0.4em;
 }
 
+
+/* 3D live viewer 270 degrees */
+#viewer-container {
+    width: 270px;
+    height: 270px;
+    margin-bottom: 3.5em;
+}
+
+.foto-right {
+    margin-right: -4.5em;
+    margin-left: auto;
+}
+
+.foto-left {
+    margin-left: -2em;
+    margin-right: auto;
+}
+
 /* 3 teksten + afbeeldingen */
 .viewer, .configurator, .full-experience {
     margin-left: 2em;
@@ -211,16 +228,6 @@ h2 {
 .viewer img, .configurator img, .full-experience img {
     padding-bottom: 2em;
     display: flex;
-}
-
-.foto-right {
-    margin-right: -2em;
-    margin-left: auto;
-}
-
-.foto-left {
-    margin-left: -2em;
-    margin-right: auto;
 }
 
 .quote {
