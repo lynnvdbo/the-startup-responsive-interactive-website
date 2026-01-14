@@ -13,38 +13,144 @@ body {
     padding: 0;
 }
 
+
 header {
-    background-color: var(--white);
     display: flex;
+    background-color: var(--white);
+    gap:1em;
+    align-items: center;  /* zorgt ervoor dat het logo niet uitgerekt is*/
+    position: relative;
+    padding: 1.5em;
+    z-index: 1;
     justify-content: space-between;
+
+    .header-button-contact-us {
+            background-color: var(--carolina-blue);
+            border-radius: 2em;
+            text-align: center;
+            color: var(--white);
+            padding: 0.5em 0.8em 0.5em 0.8em ;
+            text-decoration: none;
+
+            &:hover {
+            background-color: transparent;    
+            border: 2px solid var(--carolina-blue);
+            color: var(--carolina-blue);
+        }
+    }
+
+    img {
+        filter: brightness(0);  /* zorgt dat svg zwart is */
+    }
+
+        @media (width > 900px) {
+        justify-content: space-between;
+        padding: 0.7em;
+
+        .header-button-contact-us  {
+            display: none;
+        }
+    }
 }
 
-.assist-digital-logo {
-    margin: 1em;
-}
-
+ /* ☰ button */
 .menu-btn {
+    display:block;
+    appearance: none;
     background-color: transparent;
+    color: var(--black);
     border: none;
-    margin: 1em;
-}
+    order:-1;   /* dit zorgt ervoor dat hij voor het logo staat*/
+    z-index: 1;
+    transition:.5s;
+    
 
-.main-nav {
-    ul {
+    /* als nav open is */
+    &.is-open {
+        rotate: 180deg;
+        /* display: none; */
+    }
+
+    @media (width > 900px) {
         display: none;
     }
- 
+}
+
+
+ /* menu met alle ul */
+.header-nav {
+    position: fixed;
+    /* top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; */
+    inset: 0;   /* is een verkorte code van de 4 hierboven */
+    padding-block-start: 4em;  /* zorgt ervoor dat er boven ruimte onstaat */
+    background-color: var(--lights-lapis-lazuli);
+    transition:.5s;
+    translate: -100%;   /* zorgt ervoor dat hij uit beeld is */
+
+
+    /* als nav open is */ 
+    &.is-open {
+        translate:0;
+    }
+
+      &.is-open img {
+        content:url("https://assets.codepen.io/274456/ui-icon-cross.svg");
+        position: relative;
+        right: -25px;
+        top: -25px;
+    }
+
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        margin: 5em;
+    } 
+    
     a {
-        color: var(--black);
-        list-style-type: none;
         text-decoration: none;
+        color: var(--maastricht-blue);
+        padding: 1em 2em;
+        transition: background-color 150m ease;
+
+        &.contact-link {
+            background-color: var(--carolina-blue);
+            border-radius: 2em;
+            text-align: center;
+            color: var(--white);
+        }
 
         &:hover {
-        color: var(--black);
-        list-style-type: none;
-        text-decoration: underline;
+            text-decoration: underline;
+            text-underline-offset: 0.3em;
+        }
     }
+
+    @media (width > 900px) {
+        position: static; /* zorgt ervoor dat het weer 'normaal scherm is' */
+        background: none;
+        padding-block-start: 0;
+        padding: 1em 0em 1em 0em ;
+        translate: 0;
+        
+        ul {
+            flex-direction: row;
+            padding-right: 1.5em;
+            margin: 0em;
+        } 
     }
+}
+
+a.contact-link:hover {
+    background-color: transparent;
+    text-decoration: underline;
+    text-underline-offset: 0.3em;
+    border: 2px solid var(--carolina-blue);
+    color: var(--carolina-blue);
 }
 
 .banner-picture {
@@ -57,9 +163,10 @@ h1 {
     margin: 0.2em;
 }
 
+/* zorgt dat de tekst op de afbeelding staat */
 .overlay {
     position: absolute;
-    top: 24%;
+    top: 26%;
     left: 39%;
     transform: translate(-50%, -50%);
 }
