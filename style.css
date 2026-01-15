@@ -176,20 +176,16 @@ h2 {
 
 
 /* 3D live viewer 270 degrees */
-#viewer-container {
-    width: 270px;
-    height: 270px;
-    margin-bottom: 3.5em;
-}
-
 .foto-right {
-    margin-right: -4.5em;
+    margin-right: -2em;
     margin-left: auto;
+        margin-bottom: 3.5em;
 }
 
 .foto-left {
     margin-left: -2em;
     margin-right: auto;
+        margin-bottom: 3.5em;
 }
 
 
