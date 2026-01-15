@@ -89,7 +89,6 @@ header {
     transition:.5s;
     translate: -100%;   /* zorgt ervoor dat hij uit beeld is */
 
-
     /* als nav open is */ 
     &.is-open {
         translate:0;
@@ -102,12 +101,12 @@ header {
         top: -25px;
     }
 
-
     ul {
         list-style: none;
         display: flex;
         flex-direction: column;
         margin: 5em;
+        gap: 2em;
     } 
     
     a {
@@ -146,7 +145,7 @@ header {
 
 a.contact-link:hover {
     background-color: transparent;
-    text-decoration: underline;
+    text-decoration: none;
     text-underline-offset: 0.3em;
     border: 2px solid var(--carolina-blue);
     color: var(--carolina-blue);
@@ -219,6 +218,7 @@ h2 {
     font-size: 16px; 
     color: var(--carolina-blue); 
     }
+    
 }
 }
 
