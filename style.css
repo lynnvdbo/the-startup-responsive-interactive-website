@@ -187,7 +187,6 @@ h2 {
         margin-bottom: 3.5em;
 }
 
-
 /* 3 teksten + afbeeldingen */
 .viewer, .configurator, .full-experience {
     margin-left: 2em;
@@ -218,9 +217,31 @@ h2 {
     font-size: 16px; 
     color: var(--carolina-blue); 
     }
-    
+
+    animation-name: fade-in;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in linear;
+    animation-fill-mode: backwards;
+    }
 }
+
+.arrow li:nth-child(1) { animation-delay: 0.1s; }
+.arrow li:nth-child(2) { animation-delay: 0.9s; }
+.arrow li:nth-child(3) { animation-delay: 1.8s; }
+
+
+@keyframes fade-in {
+  from {
+    transform: translateX(-100%); /* Start 100% links buiten beeld */
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%); /* Start 100% links buiten beeld */
+    opacity: 1;
+  }
 }
+
 
 .viewer img, .configurator img, .full-experience img {
     padding-bottom: 2em;
