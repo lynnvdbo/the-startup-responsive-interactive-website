@@ -153,6 +153,11 @@ a.contact-link:hover {
     width: 100%;
     margin-bottom: 1em;
     filter: brightness(77%); 
+
+    @media (width > 800px) {
+        height: 320px;
+        object-fit: cover;
+    }
 }
 
 h1 {
@@ -176,13 +181,13 @@ h2 {
 .foto-right {
     margin-right: -2em;
     margin-left: auto;
-        margin-bottom: 3.5em;
+    margin-bottom: 3.5em;
 }
 
 .foto-left {
     margin-left: -2em;
     margin-right: auto;
-        margin-bottom: 3.5em;
+    margin-bottom: 3.5em;
 }
 
 /* 3 teksten + afbeeldingen */
@@ -267,6 +272,12 @@ h2 {
     margin-left: 2em;
     margin-right: 2em;
 
+    @media (width > 800px) {
+            margin-left: 4em;
+             margin-right: 10em;
+             font-size: var(--font-size-s);
+        }
+
     /* illustatie afbeelding */
     img {
         width: 100%;
@@ -281,13 +292,23 @@ h2 {
     p {
         font-size: var(--font-size-xl);
         margin: 0.5em 1em 0.7em 1em;
+
+        @media (width > 800px) {
+            margin-left: 2.4em;
+        }
     }
+
 
     h3 {
         padding-left: 2em;
         padding-top: 1.5em;
-        font-size: var(--font-size-xs)
+        font-size: var(--font-size-xs);
+
+        @media (width > 800px) {
+            margin-left: 3em;
+        }
     }
+    
 } 
 
 
@@ -372,10 +393,23 @@ h2 {
     a {
         text-decoration: none;
     }
+
+    @media (width > 800px) {
+        display: flex;
+        gap: 1em;
+        margin-left: 4.5em;
+        margin-top: 2em;
+    }
 }
 
 footer {
     background-color: var(--white);
+
+    @media (width > 800px) {
+        display: flex;
+        align-items: center; 
+        justify-content: space-between; 
+    }
 }
 
 footer p, .sublogo {
@@ -384,9 +418,16 @@ footer p, .sublogo {
     padding-top: 0.4em;
 }
 
+
 .sub-logo {
     padding-left: 2em;
     padding-top: 1.3em;
+
+
+    @media (width > 800px) {
+        padding-top: 0em;
+     
+    }
 }
 
 footer a {
@@ -404,6 +445,12 @@ footer ul {
     justify-content: space-between;
     padding: 1em;
     margin: 1em;
+
+    @media (width > 800px) {
+        display: flex;
+        justify-content: end;
+        gap: 1em;
+    }
 }
 
 
