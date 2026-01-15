@@ -112,6 +112,8 @@ header {
         color: var(--maastricht-blue);
         padding: 1em 2em;
         transition: background-color 150m ease;
+        display: flex;
+        justify-content: center;
 
         &.contact-link {
             background-color: var(--carolina-blue);
