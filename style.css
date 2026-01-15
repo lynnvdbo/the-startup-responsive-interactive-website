@@ -26,7 +26,6 @@ header {
             border-radius: 2em;
             text-align: center;
             color: var(--white);
-            padding: 0.5em 0.8em 0.5em 0.8em ;
             text-decoration: none;
 
             &:hover {
