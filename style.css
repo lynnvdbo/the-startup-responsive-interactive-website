@@ -368,17 +368,11 @@ footer a {
 }
 
 footer ul {
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-top: 0.6em;
-}
-
-footer li {
     display: flex;
     justify-content: space-between;
     padding: 1em;
+    margin: 1em;
 }
-
 
 
 
