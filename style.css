@@ -319,6 +319,23 @@ h2 {
   }
 }
 
+.rotate {
+  animation-name: --rotateUp;
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@keyframes --rotateUp {
+  0% { 
+    transform: rotate(0deg); 
+  }
+
+  100% { 
+    transform: rotate(360deg); 
+  }  
+} 
+
 
 /* button Learn more about 270 */
 .Learn-more-about-270 {
