@@ -4,6 +4,9 @@ const menuButton = document.querySelector(".menu-btn")
 // de nav opzoeken in de HTML en die een naam geven
 const headerNav = document.querySelector(".header-nav")
 
+// de nav opzoeken in de HTML en die een naam geven
+const body = document.querySelector("body")
+
 // op de button klikken
 menuButton.addEventListener('click', toggleNav)
 
@@ -11,6 +14,7 @@ menuButton.addEventListener('click', toggleNav)
 function toggleNav() {
     menuButton.classList.toggle('is-open')
     headerNav.classList.toggle('is-open')
+    body.classList.toggle('overflow')
 }
 
 

@@ -11,6 +11,10 @@ body {
     padding: 0;
 }
 
+.overflow {
+    overflow: hidden;
+}
+
 header {
     display: flex;
     background-color: var(--white);
@@ -92,7 +96,7 @@ header {
     translate: -100%;   /* zorgt ervoor dat hij uit beeld is */
 
     /* als nav open is */ 
-    &.is-open {
+    &.is-open  {
         translate:0;
     }
 
