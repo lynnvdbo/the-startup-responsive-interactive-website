@@ -52,10 +52,6 @@ header {
             display: none;
         }
     }
-
-    .assist-digital-logo {
-        margin-left: 2em;
-    }
 }
 
  /* ☰ button */
@@ -68,11 +64,13 @@ header {
     order:-1;   /* dit zorgt ervoor dat hij voor het logo staat*/
     z-index: 1;
     transition:.5s;
-    
+    display: flex;
+    gap: 0.4em;
+
 
     /* als nav open is */
     &.is-open {
-        rotate: 180deg;
+        rotate: 360deg;
         /* display: none; */
     }
 
