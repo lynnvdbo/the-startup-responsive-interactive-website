@@ -48,6 +48,10 @@ header {
             display: none;
         }
     }
+
+    .assist-digital-logo {
+        margin-left: 2em;
+    }
 }
 
  /* ☰ button */
@@ -106,7 +110,7 @@ header {
         margin: 5em;
         gap: 2em;
     } 
-    
+
     a {
         text-decoration: none;
         color: var(--maastricht-blue);
