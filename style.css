@@ -164,7 +164,7 @@ a.contact-link:hover {
 
     @media (width > 800px) {
         height: 320px;
-        object-fit: cover;
+        object-fit: cover; /* zorgt ervoor dat de afbeelding niet is uitgerekt*/
     }
 }
 
