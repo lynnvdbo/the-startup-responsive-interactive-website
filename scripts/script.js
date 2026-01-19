@@ -4,21 +4,35 @@ const menuButton = document.querySelector(".menu-btn")
 // de nav opzoeken in de HTML en die een naam geven
 const headerNav = document.querySelector(".header-nav")
 
-// de nav opzoeken in de HTML en die een naam geven
+// de body opzoeken in de HTML en die een naam geven
 const body = document.querySelector("body")
+
+// de button opzoeken in de HTML en die een naam geven
+const kruisje = document.querySelector(".menu-btn-close")
 
 // op de button klikken
 menuButton.addEventListener('click', toggleNav)
+kruisje.addEventListener('click', menuClose)
 
 // een functie die het menu open en dicht doet
+// deze zorgt ervoor dat hij open gaat
 function toggleNav() {
     menuButton.classList.toggle('is-open')
     headerNav.classList.toggle('is-open')
     body.classList.toggle('overflow')
 }
 
+// deze zorgt ervoor dat hij dicht gaat
+function menuClose() {
+    menuButton.classList.toggle('is-open')
+    headerNav.classList.toggle('is-open')
+    body.classList.toggle('overflow')
+}
 
-// Learn-more-about-270
+
+
+
+// UI event toegevoegd aan Learn-more-about-270 button
 // Stap 1: querySelector
 let theLink = document.querySelector('.Learn-more-about-270')
 
@@ -34,3 +48,5 @@ function cirkleHandler() {
 theLink.addEventListener("animationend", function(){
   theLink.classList.remove("rotate")
 })
+
+ 
