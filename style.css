@@ -12,7 +12,14 @@ body {
 }
 
 .overflow {
-    overflow: hidden;
+  overflow: hidden;
+}
+
+.assist-digital-logo {
+  @media (width > 1200px) {
+    margin-left: 3em;
+    width: 5em;
+  }
 }
 
 header {
@@ -44,9 +51,9 @@ header {
         filter: brightness(0);  /* zorgt dat svg zwart is */
     }
 
-        @media (width > 900px) {
-        justify-content: space-between;
-        padding: 0.7em;
+  @media (width > 900px) {
+    justify-content: space-between;
+    padding: 0.7em;
 
         .header-button-contact-us  {
             display: none;
@@ -74,11 +81,25 @@ header {
         /* display: none; */
     }
 
-    @media (width > 900px) {
-        display: none;
-    }
+  @media (width > 900px) {
+    display: none;
+  }
 }
 
+.menu-btn-close {
+  appearance: none;
+  background-color: transparent;
+  color: var(--black);
+  border: none;
+  z-index: 1;
+  transition: 0.5s;
+  display: flex;
+  gap: 0.4em;
+
+  @media (width > 900px) {
+    display: none; /* kruisje is niet meer zichtbaar */
+  }
+}
 
  /* menu met alle ul */
 .header-nav {
@@ -133,20 +154,21 @@ header {
             text-underline-offset: 0.3em;
         }
     }
+  }
 
-    @media (width > 900px) {
-        position: static; /* zorgt ervoor dat het weer 'normaal scherm is' */
-        background: none;
-        padding-block-start: 0;
-        padding: 1em 0em 1em 0em ;
-        translate: 0;
-        
-        ul {
-            flex-direction: row;
-            padding-right: 1.5em;
-            margin: 0em;
-        } 
+  @media (width > 900px) {
+    position: static; /* zorgt ervoor dat het weer 'normaal scherm is' */
+    background: none;
+    padding-block-start: 0;
+    padding: 1em 0em 1em 0em;
+    translate: 0;
+
+    ul {
+      flex-direction: row;
+      padding-right: 1.5em;
+      margin: 0em;
     }
+  }
 }
 
 a.contact-link:hover {
@@ -162,22 +184,64 @@ a.contact-link:hover {
     margin-bottom: 1em;
     filter: brightness(77%); 
 
-    @media (width > 800px) {
-        height: 320px;
-        object-fit: cover; /* zorgt ervoor dat de afbeelding niet is uitgerekt*/
-    }
+  @media (width > 720px) {
+    height: 250px;
+    object-fit: cover; /* zorgt ervoor dat de afbeelding niet is uitgerekt*/
+  }
+
+  @media (width > 1200px) {
+    height: 350px;
+  }
 }
 
 h1 {
-    margin: 0.2em;
+  margin: 0.2em;
+  font-weight: var(--font-weight-bold);
+
+  @media (width > 720px) {
+    font-size: var(--font-size-heading-l);
+  }
+
+  @media (width > 1200px) {
+    font-size: var(--font-size-heading-xl);
+  }
+}
+
+
+p {
+  font-weight: var(--font-weight-light);
 }
 
 /* zorgt dat de tekst op de afbeelding staat */
 .overlay {
+  position: absolute;
+  top: 26%;
+  left: 39%;
+  transform: translate(-50%, -50%);
+
+  @media (width > 720px) {
     position: absolute;
-    top: 26%;
-    left: 39%;
+    top: 20%;
+    left: 32%;
     transform: translate(-50%, -50%);
+  }
+
+  @media (width > 1200px) {
+    top: 32%;
+    left: 20%;
+  }
+}
+
+h2 {
+  padding-bottom: 0.4em;
+  @media (width > 720px) {
+    font-size: var(--font-size-heading-m);
+  }
+
+  @media (width > 720px) {
+    font-size: var(--font-size-heading-l);
+  }
+}
 
 
 /* animatie h2 komt van links */
@@ -214,15 +278,138 @@ h2 {
 }
 
 /* 3 teksten + afbeeldingen */
-.viewer, .configurator, .full-experience {
-    margin-left: 2em;
-    margin-right: 2em;
+.viewer,
+.configurator,
+.full-experience {
+  margin-left: 2em;
+  margin-right: 2em;
+
+  @media (width > 720px) {
+    margin-left: 3em;
+    font-size: var(--font-size-s);
+  }
+
+  @media (width > 1200px) {
+    margin-left: 3em;
+    font-size: var(--font-size-m);
+  }
 }
 
-.viewer ul, .configurator ul, .full-experience ul {
-    margin-top: 1em;
-    margin-left: 1em;
-    margin-bottom: 2.2em;
+ /* zorgt da 3d teken niet zichtbaar is*/
+.TSD-3d-indicator {
+    display: none;
+}
+
+.viewer,
+.full-experience {
+  @media (width > 720px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
+
+
+.viewer {
+    margin-bottom: 3em;
+
+    @media (width > 720px) {
+        display: flex;
+        height: auto;
+  }
+
+    .viewer-viewer {   
+        height: 300px;
+        width: auto;
+
+            @media (width > 720px) {
+                display: flex;
+                width: 40%;
+        }
+
+            @media (width > 1200px) {
+                    width: 30vw;
+                    height: 30vw;
+            }
+    }
+
+    .viewer-text {
+        @media (width > 720px) {
+            width: 60%;
+  }
+}
+}
+
+
+.configurator {
+    margin-bottom: 3em;
+
+    @media (width > 720px) {
+        display: flex;
+        flex-direction: row-reverse;
+        height: auto;
+    } 
+
+    .configurator-viewer {   
+        height: 300px;
+        width: auto;
+
+            @media (width > 720px) {
+            display: flex;
+            width: 40%;
+        }
+
+        @media (width > 1200px) {
+
+                width: 30vw;
+                height: 30vw;
+        }
+    }
+
+    .configurator-text {
+        @media (width > 720px) {
+            width: 60%;
+  }
+  }
+}
+
+
+.full-experience {
+    margin-bottom: 3em;
+
+    @media (width > 720px) {
+        display: flex;
+        height: auto;
+    } 
+
+    .full-experience-viewer {   
+        height: 300px;
+        width: auto;
+
+            @media (width > 720px) {
+            display: flex;
+            width: 40%;
+        }
+
+        @media (width > 1200px) {
+                width: 30vw;
+                height: 30vw;
+        }
+    }
+
+    .full-experience-text {
+        @media (width > 720px) {
+            width: 60%;
+  }
+  }
+}
+
+.viewer ul,
+.configurator ul,
+.full-experience ul {
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-bottom: 2.2em;
 }
 
 .arrow {
@@ -281,9 +468,9 @@ h2 {
     margin-bottom: 1.5em;
     font-size: var(--font-size-xl);
 
-    .h3 {
-        margin: 0.5em;
-    }
+  @media (width > 1200px) {
+    font-size: var(--font-size-heading-m);
+  }
 }
 
 /* span kleur verandering in de quote/zin */
@@ -295,18 +482,27 @@ h2 {
     margin-left: 2em;
     margin-right: 2em;
 
-    @media (width > 800px) {
-            margin-left: 4em;
-             margin-right: 10em;
-             font-size: var(--font-size-s);
-        }
+  @media (width > 720px) {
+    margin-left: 4em;
+    margin-right: 7em;
+    font-size: var(--font-size-s);
+  }
 
-    /* illustatie afbeelding */
-    img {
-        width: 100%;
-        margin-top: 2.5em;
-        margin-bottom: 2em;
+  @media (width > 1200px) {
+    margin-right: 30em;
+    font-size: var(--font-size-m);
+  }
+
+  /* illustatie afbeelding */
+  img {
+    width: 100%;
+    margin-top: 2.5em;
+    margin-bottom: 2em;
+
+    @media (width > 1200px) {
+      width: 100%;
     }
+  }
 }
 
 .get-in-touch {
@@ -316,24 +512,33 @@ h2 {
         font-size: var(--font-size-xl);
         margin: 0.5em 1em 0.7em 1em;
 
-        @media (width > 800px) {
-            margin-left: 2.4em;
-        }
+    @media (width > 720px) {
+      margin-left: 2.1em;
+      font-size: 38px;
     }
 
+    @media (width > 1200px) {
+      margin-left: 1.6em;
+      font-size: var(--font-size-heading-s);
+    }
+  }
 
     h3 {
         padding-left: 2em;
         padding-top: 1.5em;
         font-size: var(--font-size-xs);
 
-        @media (width > 800px) {
-            margin-left: 3em;
-        }
+    @media (width > 720px) {
+      margin-left: 2.1em;
+      font-size: var(--font-size-s);
     }
-    
-} 
 
+    @media (width > 1200px) {
+      margin-left: 1.4em;
+      font-size: var(--font-size-m);
+    }
+  }
+}
 
 /* button Contact us */
 .Contact-us {
@@ -417,22 +622,22 @@ h2 {
         text-decoration: none;
     }
 
-    @media (width > 800px) {
-        display: flex;
-        gap: 1em;
-        margin-left: 4.5em;
-        margin-top: 2em;
-    }
+  @media (width > 720px) {
+    display: flex;
+    gap: 1em;
+    margin-left: 4.5em;
+    margin-top: 2em;
+  }
 }
 
 footer {
     background-color: var(--white);
 
-    @media (width > 800px) {
-        display: flex;
-        align-items: center; 
-        justify-content: space-between; 
-    }
+  @media (width > 720px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 footer p, .sublogo {
@@ -446,11 +651,9 @@ footer p, .sublogo {
     padding-left: 2em;
     padding-top: 1.3em;
 
-
-    @media (width > 800px) {
-        padding-top: 0em;
-     
-    }
+  @media (width > 720px) {
+    padding-top: 0em;
+  }
 }
 
 footer a {
@@ -469,11 +672,11 @@ footer ul {
     padding: 1em;
     margin: 1em;
 
-    @media (width > 800px) {
-        display: flex;
-        justify-content: end;
-        gap: 1em;
-    }
+  @media (width > 720px) {
+    display: flex;
+    justify-content: end;
+    gap: 1em;
+  }
 }
 
 
