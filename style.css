@@ -1,14 +1,16 @@
 body {
-    font-family: var(font-family);
-    background-color: var(--maastricht-blue);
-    color: var(--white);
-    line-height: var(--line-height-text);
-    letter-spacing: 3%;
+  font-family: var(font-family);
+  background-color: var(--maastricht-blue);
+  color: var(--white);
+  line-height: var(--line-height-text);
+  letter-spacing: 3%;
 }
 
+/* shift option f = formatter */
+
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .overflow {
@@ -23,63 +25,62 @@ body {
 }
 
 header {
-    display: flex;
-    background-color: var(--white);
-    gap:1em;
-    align-items: center;  /* zorgt ervoor dat het logo niet uitgerekt is*/
-    position: relative;
-    padding: 1.5em;
-    z-index: 1;
-    justify-content: space-between;
+  display: flex;
+  background-color: var(--white);
+  gap: 1em;
+  align-items: center; /* zorgt ervoor dat het logo niet uitgerekt is*/
+  position: relative;
+  padding: 1.5em;
+  z-index: 1;
+  justify-content: space-between;
 
-    .header-button-contact-us {
-            background-color: var(--carolina-blue);
-            border-radius: 2em;
-            text-align: center;
-            color: var(--white);
-            padding: 0.5em 0.8em ;
-            text-decoration: none;
+  .header-button-contact-us {
+    background-color: var(--carolina-blue);
+    border-radius: 2em;
+    text-align: center;
+    color: var(--white);
+    padding: 0.5em 0.8em;
+    text-decoration: none;
 
-            &:hover {
-            background-color: transparent;    
-            border: 2px solid var(--carolina-blue);
-            color: var(--carolina-blue);
-        }
+    &:hover {
+      background-color: transparent;
+      border: 2px solid var(--carolina-blue);
+      color: var(--carolina-blue);
     }
+  }
 
-    img {
-        filter: brightness(0);  /* zorgt dat svg zwart is */
-    }
+  img {
+    filter: brightness(0); /* zorgt dat svg zwart is */
+  }
 
   @media (width > 900px) {
     justify-content: space-between;
     padding: 0.7em;
 
-        .header-button-contact-us  {
-            display: none;
-        }
+    .header-button-contact-us {
+      display: none;
     }
+  }
 }
 
- /* ☰ button */
+/* ☰ button */
 .menu-btn {
-    display:block;
-    appearance: none;
-    background-color: transparent;
-    color: var(--black);
-    border: none;
-    order:-1;   /* dit zorgt ervoor dat hij voor het logo staat*/
-    z-index: 1;
-    transition:.5s;
-    display: flex;
-    gap: 0.4em;
+  display: block;
+  appearance: none;
+  background-color: transparent;
+  color: var(--black);
+  border: none;
+  order: -1; /* dit zorgt ervoor dat hij voor het logo staat*/
+  z-index: 1;
+  transition: 0.5s;
+  display: flex;
+  gap: 0.4em;
 
-
-    /* als nav open is */
-    &.is-open {
-        rotate: 360deg;
-        /* display: none; */
-    }
+  /* als nav open is */
+  &.is-open {
+    rotate: 360deg;
+    display: none;
+  }
 
   @media (width > 900px) {
     display: none;
@@ -101,58 +102,57 @@ header {
   }
 }
 
- /* menu met alle ul */
+/* menu met alle ul */
 .header-nav {
-    position: fixed;
-    /* top: 0;
+  position: fixed;
+  /* top: 0;
     right: 0;
     bottom: 0;
     left: 0; */
-    inset: 0;   /* is een verkorte code van de 4 hierboven */
-    padding-block-start: 4em;  /* zorgt ervoor dat er boven ruimte onstaat */
-    background-color: var(--lights-lapis-lazuli);
-    transition:.5s;
-    translate: -100%;   /* zorgt ervoor dat hij uit beeld is */
+  inset: 0; /* is een verkorte code van de 4 hierboven */
+  padding-block-start: 4em; /* zorgt ervoor dat er boven ruimte onstaat */
+  background-color: var(--lights-lapis-lazuli);
+  transition: 0.5s;
+  translate: -100%; /* zorgt ervoor dat hij uit beeld is */
 
-    /* als nav open is */ 
-    &.is-open  {
-        translate:0;
+  /* als nav open is */
+  &.is-open {
+    translate: 0;
+  }
+
+  &.is-open img {
+    content: url("https://assets.codepen.io/274456/ui-icon-cross.svg");
+    position: relative;
+    right: -25px;
+    top: -25px;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 5em;
+    gap: 2em;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--maastricht-blue);
+    padding: 1em 2em;
+    transition: background-color 150m ease;
+    display: flex;
+    justify-content: center;
+
+    &.contact-link {
+      background-color: var(--carolina-blue);
+      border-radius: 2em;
+      text-align: center;
+      color: var(--white);
     }
 
-      &.is-open img {
-        content:url("https://assets.codepen.io/274456/ui-icon-cross.svg");
-        position: relative;
-        right: -25px;
-        top: -25px;
-    }
-
-    ul {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        margin: 5em;
-        gap: 2em;
-    } 
-
-    a {
-        text-decoration: none;
-        color: var(--maastricht-blue);
-        padding: 1em 2em;
-        transition: background-color 150m ease;
-        display: flex;
-        justify-content: center;
-
-        &.contact-link {
-            background-color: var(--carolina-blue);
-            border-radius: 2em;
-            text-align: center;
-            color: var(--white);
-        }
-
-        &:hover {
-            text-decoration: underline;
-            text-underline-offset: 0.3em;
-        }
+    &:hover {
+      text-decoration: underline;
+      text-underline-offset: 0.3em;
     }
   }
 
@@ -172,17 +172,17 @@ header {
 }
 
 a.contact-link:hover {
-    background-color: transparent;
-    text-decoration: none;
-    text-underline-offset: 0.3em;
-    border: 2px solid var(--carolina-blue);
-    color: var(--carolina-blue);
+  background-color: transparent;
+  text-decoration: none;
+  text-underline-offset: 0.3em;
+  border: 2px solid var(--carolina-blue);
+  color: var(--carolina-blue);
 }
 
 .banner-picture {
-    width: 100%;
-    margin-bottom: 1em;
-    filter: brightness(77%); 
+  width: 100%;
+  margin-bottom: 1em;
+  filter: brightness(77%);
 
   @media (width > 720px) {
     height: 250px;
@@ -266,16 +266,17 @@ h2 {
 
 /* 3D live viewer 270 degrees */
 .foto-right {
-    margin-right: -2em;
-    margin-left: auto;
-    margin-bottom: 3.5em;
+  margin-right: -2em;
+  margin-left: auto;
+  margin-bottom: 3.5em;
 }
 
 .foto-left {
-    margin-left: -2em;
-    margin-right: auto;
-    margin-bottom: 3.5em;
+  margin-left: -2em;
+  margin-right: auto;
+  margin-bottom: 3.5em;
 }
+
 
 /* 3 teksten + afbeeldingen */
 .viewer,
@@ -422,13 +423,13 @@ h2 {
     position: relative;
 
     &::before {
-    content: "⭢"; 
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 16px; 
-    color: var(--carolina-blue); 
+      content: "⭢";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 16px;
+      color: var(--carolina-blue);
     }
 
     animation-name: fade-in;
@@ -436,13 +437,18 @@ h2 {
     animation-iteration-count: 1;
     animation-timing-function: ease-in linear;
     animation-fill-mode: backwards;
-    }
+  }
 }
 
-.arrow li:nth-child(1) { animation-delay: 0.1s; }
-.arrow li:nth-child(2) { animation-delay: 0.9s; }
-.arrow li:nth-child(3) { animation-delay: 1.8s; }
-
+.arrow li:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.arrow li:nth-child(2) {
+  animation-delay: 0.9s;
+}
+.arrow li:nth-child(3) {
+  animation-delay: 1.8s;
+}
 
 @keyframes fade-in {
   from {
@@ -455,18 +461,23 @@ h2 {
   }
 }
 
-
-.viewer img, .configurator img, .full-experience img {
-    padding-bottom: 2em;
-    display: flex;
+.viewer img,
+.configurator img,
+.full-experience img {
+  padding-bottom: 2em;
+  display: flex;
 }
 
 .quote {
-    background-color: var(--space-cadet);
-    padding: 1em;
-    text-align: center;
-    margin-bottom: 1.5em;
-    font-size: var(--font-size-xl);
+  background-color: var(--space-cadet);
+  padding: 1em;
+  text-align: center;
+  margin-bottom: 1.5em;
+  font-size: var(--font-size-xl);
+
+  .h3 {
+    margin: 0.5em;
+  }
 
   @media (width > 1200px) {
     font-size: var(--font-size-heading-m);
@@ -475,12 +486,12 @@ h2 {
 
 /* span kleur verandering in de quote/zin */
 .special-color {
-    color: var(--carolina-blue);
+  color: var(--carolina-blue);
 }
 
 .assets-implemenatation {
-    margin-left: 2em;
-    margin-right: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
 
   @media (width > 720px) {
     margin-left: 4em;
@@ -506,11 +517,12 @@ h2 {
 }
 
 .get-in-touch {
-    background-color: var(--dark-cerulean);
+  background-color: var(--dark-cerulean);
 
-    p {
-        font-size: var(--font-size-xl);
-        margin: 0.5em 1em 0.7em 1em;
+  p {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-regular);
+    margin: 0.5em 1em 0.7em 1em;
 
     @media (width > 720px) {
       margin-left: 2.1em;
@@ -523,10 +535,10 @@ h2 {
     }
   }
 
-    h3 {
-        padding-left: 2em;
-        padding-top: 1.5em;
-        font-size: var(--font-size-xs);
+  h3 {
+    padding-left: 2em;
+    padding-top: 1em;
+    font-size: var(--font-size-xs);
 
     @media (width > 720px) {
       margin-left: 2.1em;
@@ -576,15 +588,14 @@ h2 {
 }
 
 @keyframes --rotateUp {
-  0% { 
-    transform: rotate(0deg); 
+  0% {
+    transform: rotate(0deg);
   }
 
-  100% { 
-    transform: rotate(360deg); 
-  }  
-} 
-
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 /* button Learn more about 270 */
 .Learn-more-about-270 {
@@ -598,6 +609,7 @@ h2 {
   cursor: pointer;
   display: inline-flex;
   align-items: center;
+  font-weight: var(--font-weight-demi);
 
   &:focus {
     outline-offset: 0.1em;
@@ -615,12 +627,12 @@ h2 {
 }
 
 .buttons {
-    text-align: center;
-    padding-bottom: 2em;
+  text-align: center;
+  padding-bottom: 2em;
 
-    a {
-        text-decoration: none;
-    }
+  a {
+    text-decoration: none;
+  }
 
   @media (width > 720px) {
     display: flex;
@@ -631,7 +643,7 @@ h2 {
 }
 
 footer {
-    background-color: var(--white);
+  background-color: var(--white);
 
   @media (width > 720px) {
     display: flex;
@@ -640,16 +652,16 @@ footer {
   }
 }
 
-footer p, .sublogo {
-    color: var(--black);
-    padding-left: 2em;
-    padding-top: 0.4em;
+footer p,
+.sublogo {
+  color: var(--black);
+  padding-left: 2em;
+  padding-top: 0.4em;
 }
 
-
 .sub-logo {
-    padding-left: 2em;
-    padding-top: 1.3em;
+  padding-left: 2em;
+  padding-top: 1.3em;
 
   @media (width > 720px) {
     padding-top: 0em;
@@ -657,20 +669,20 @@ footer p, .sublogo {
 }
 
 footer a {
-    color: var(--black);
-    text-decoration: none;
+  color: var(--black);
+  text-decoration: none;
 
-    &:hover {
-        color: var(--dark-cerulean);
-        text-decoration: underline;
-    }
+  &:hover {
+    color: var(--dark-cerulean);
+    text-decoration: underline;
+  }
 }
 
 footer ul {
-    display: flex;
-    justify-content: space-between;
-    padding: 1em;
-    margin: 1em;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  margin: 1em;
 
   @media (width > 720px) {
     display: flex;
@@ -678,13 +690,3 @@ footer ul {
     gap: 1em;
   }
 }
-
-
-
-
-
-
-
-
-
-
