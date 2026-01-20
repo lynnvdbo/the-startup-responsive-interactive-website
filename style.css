@@ -28,16 +28,6 @@ body {
 }
 
 
-/* hover van hammenu contact button */
-a.contact-link:hover {
-  background-color: transparent;
-  text-decoration: none;
-  text-underline-offset: 0.3em;
-  border: 2px solid var(--carolina-blue);
-  color: var(--carolina-blue);
-}
-
-
 /* ☰ button */
 .menu-btn {
   display: block;
@@ -165,6 +155,14 @@ header {
       border-radius: 2em;
       text-align: center;
       color: var(--white);
+
+      &:hover {
+        background-color: transparent;
+        text-decoration: none;
+        text-underline-offset: 0.3em;
+        border: 2px solid var(--carolina-blue);
+        color: var(--carolina-blue);
+      }
     }
 
     &:hover {
