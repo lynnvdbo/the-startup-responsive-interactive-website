@@ -37,7 +37,7 @@ body {
   border: none;
   order: -1; /* dit zorgt ervoor dat hij voor het logo staat*/
   z-index: 1;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
   display: flex;
   gap: 0.4em;
 
@@ -59,7 +59,7 @@ body {
   color: var(--black);
   border: none;
   z-index: 1;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
   display: flex;
   gap: 0.4em;
 
