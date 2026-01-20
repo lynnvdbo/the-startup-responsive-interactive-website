@@ -589,7 +589,7 @@ h2 {
 
 
 /* button Contact-us */
-.Contact-us {
+.contact-us {
   padding: var(--button-size);
   letter-spacing: 3%;
   background-color: var(--carolina-blue);
@@ -618,7 +618,7 @@ h2 {
 
 
 /* button Learn more about 270 */
-.Learn-more-about-270 {
+.learn-more-about-270 {
   padding: var(--button-size);
   letter-spacing: 3%;
   background-color: transparent;

@@ -34,7 +34,7 @@ function menuClose() {
 
 // UI event toegevoegd aan Learn-more-about-270 button
 // Stap 1: querySelector
-let theLink = document.querySelector('.Learn-more-about-270')
+let theLink = document.querySelector('.learn-more-about-270')
 
 // Stap 2: addEventListener
 theLink.addEventListener("mouseout", cirkleHandler)
