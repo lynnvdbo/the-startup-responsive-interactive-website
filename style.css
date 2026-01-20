@@ -14,11 +14,6 @@ body {
 }
 
 
-.overflow {
-  overflow: hidden;
-}
-
-
 .assist-digital-logo {
   @media (width > 1200px) {
     margin-left: 3em;
@@ -27,43 +22,19 @@ body {
 }
 
 
-header {
-  display: flex;
-  background-color: var(--white);
-  gap: 1em;
-  align-items: center; /* zorgt ervoor dat het logo niet uitgerekt is*/
-  position: relative;
-  padding: 1.5em;
-  z-index: 1;
-  justify-content: space-between;
+/* zorgt ervoor dat je niet meer kan scrollen als hammenu is geopend */
+.overflow {
+  overflow: hidden;
+}
 
-  .header-button-contact-us {
-    background-color: var(--carolina-blue);
-    border-radius: 2em;
-    text-align: center;
-    color: var(--white);
-    padding: 0.5em 0.8em;
-    text-decoration: none;
 
-    &:hover {
-      background-color: transparent;
-      border: 2px solid var(--carolina-blue);
-      color: var(--carolina-blue);
-    }
-  }
-
-  img {
-    filter: brightness(0); /* zorgt dat svg zwart is */
-  }
-
-  @media (width > 900px) {
-    justify-content: space-between;
-    padding: 0.7em;
-
-    .header-button-contact-us {
-      display: none;
-    }
-  }
+/* hover van hammenu contact button */
+a.contact-link:hover {
+  background-color: transparent;
+  text-decoration: none;
+  text-underline-offset: 0.3em;
+  border: 2px solid var(--carolina-blue);
+  color: var(--carolina-blue);
 }
 
 
@@ -104,6 +75,46 @@ header {
 
   @media (width > 900px) {
     display: none; /* kruisje is niet meer zichtbaar */
+  }
+}
+
+
+header {
+  display: flex;
+  background-color: var(--white);
+  gap: 1em;
+  align-items: center; /* zorgt ervoor dat het logo niet uitgerekt is*/
+  position: relative;
+  padding: 1.5em;
+  z-index: 1;
+  justify-content: space-between;
+
+  .header-button-contact-us {
+    background-color: var(--carolina-blue);
+    border-radius: 2em;
+    text-align: center;
+    color: var(--white);
+    padding: 0.5em 0.8em;
+    text-decoration: none;
+
+    &:hover {
+      background-color: transparent;
+      border: 2px solid var(--carolina-blue);
+      color: var(--carolina-blue);
+    }
+  }
+
+  img {
+    filter: brightness(0); /* zorgt dat svg zwart is */
+  }
+
+  @media (width > 900px) {
+    justify-content: space-between;
+    padding: 0.7em;
+
+    .header-button-contact-us {
+      display: none;
+    }
   }
 }
 
@@ -178,15 +189,6 @@ header {
 }
 
 
-a.contact-link:hover {
-  background-color: transparent;
-  text-decoration: none;
-  text-underline-offset: 0.3em;
-  border: 2px solid var(--carolina-blue);
-  color: var(--carolina-blue);
-}
-
-
 .banner-picture {
   width: 100%;
   margin-bottom: 1em;
@@ -200,25 +202,6 @@ a.contact-link:hover {
   @media (width > 1200px) {
     height: 350px;
   }
-}
-
-
-h1 {
-  margin: 0.2em;
-  font-weight: var(--font-weight-bold);
-
-  @media (width > 720px) {
-    font-size: var(--font-size-heading-l);
-  }
-
-  @media (width > 1200px) {
-    font-size: var(--font-size-heading-xl);
-  }
-}
-
-
-p {
-  font-weight: var(--font-weight-light);
 }
 
 
@@ -240,6 +223,25 @@ p {
     top: 32%;
     left: 20%;
   }
+}
+
+
+h1 {
+  margin: 0.2em;
+  font-weight: var(--font-weight-bold);
+
+  @media (width > 720px) {
+    font-size: var(--font-size-heading-l);
+  }
+
+  @media (width > 1200px) {
+    font-size: var(--font-size-heading-xl);
+  }
+}
+
+
+p {
+  font-weight: var(--font-weight-light);
 }
 
 
@@ -307,10 +309,12 @@ h2 {
   }
 }
 
+
  /* zorgt da 3d teken niet zichtbaar is*/
 .TSD-3d-indicator {
     display: none;
 }
+
 
 .viewer,
 .full-experience {
@@ -496,10 +500,12 @@ h2 {
   }
 }
 
+
 /* span kleur verandering in de quote/zin */
 .special-color {
   color: var(--carolina-blue);
 }
+
 
 .assets-implemenatation {
   margin-left: 2em;
@@ -566,7 +572,25 @@ h2 {
 }
 
 
-/* button Contact us */
+/* button Contact us en button Learn more about 270  */
+.buttons {
+  text-align: center;
+  padding-bottom: 2em;
+
+  a {
+    text-decoration: none;
+  }
+
+  @media (width > 720px) {
+    display: flex;
+    gap: 1em;
+    margin-left: 4.5em;
+    margin-top: 2em;
+  }
+}
+
+
+/* button Contact-us */
 .Contact-us {
   padding: var(--button-size);
   letter-spacing: 3%;
@@ -591,25 +615,6 @@ h2 {
     background: transparent;
     color: var(--white);
     border: 2px solid var(--maya-blue);
-  }
-}
-
-
-.rotate {
-  animation-name: --rotateUp;
-  animation-duration: 1.2s;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
-}
-
-
-@keyframes --rotateUp {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
   }
 }
 
@@ -644,19 +649,21 @@ h2 {
 }
 
 
-.buttons {
-  text-align: center;
-  padding-bottom: 2em;
+/* animatie op button Learn more about 270 */
+.rotate {
+  animation-name: --rotateUp;
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
 
-  a {
-    text-decoration: none;
+@keyframes --rotateUp {
+  0% {
+    transform: rotate(0deg);
   }
 
-  @media (width > 720px) {
-    display: flex;
-    gap: 1em;
-    margin-left: 4.5em;
-    margin-top: 2em;
+  100% {
+    transform: rotate(360deg);
   }
 }
 
