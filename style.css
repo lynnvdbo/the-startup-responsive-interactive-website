@@ -583,7 +583,7 @@ h2 {
 }
 
 
-/* button Contact us en button Learn more about 270  */
+/* button contact us en button learn more about 270  */
 .buttons {
   text-align: center;
   padding-bottom: 2em;
@@ -601,7 +601,7 @@ h2 {
 }
 
 
-/* button Contact-us */
+/* button contact-us */
 .contact-us {
   padding: var(--button-size);
   letter-spacing: 3%;
@@ -630,7 +630,7 @@ h2 {
 }
 
 
-/* button Learn more about 270 */
+/* button learn more about 270 */
 .learn-more-about-270 {
   padding: var(--button-size);
   letter-spacing: 3%;
@@ -660,7 +660,7 @@ h2 {
 }
 
 
-/* animatie op button Learn more about 270 */
+/* animatie op button learn more about 270 */
 .rotate {
   animation-name: --rotateUp;
   animation-duration: 1.2s;
