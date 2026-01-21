@@ -54,7 +54,7 @@ En mijn derde breakpoiht is voor desktop en dat is om 1200px. Qua design verande
 <img width="1100" height="600" alt="Scherm­afbeelding 2026-01-21 om 12 16 10" src="https://github.com/user-attachments/assets/17f715b2-d1d9-4432-a8f9-cb34b0937259" />
 
 ### Toegankelijk
-Voor de toegankelijkheid van de website heb ik verschillende tests gedaan, waaronder de WCAG audit. Hier kwam uit dat de kleurencontrast die ze voor de knoppen hebben niet goed is.
+Voor de toegankelijkheid van de website heb ik verschillende testen gedaan, waaronder de WCAG audit en regelmatig deed ik een HTML checker.
 
 ### Huisstijl
 De opdrachtgever heeft een figma bestand doorgestuurd met hun huisstijhl. Op basis van [dit figma](https://www.figma.com/design/M3CG5QPebgBfvJuy36WGcV/Opdracht-januari-2026?node-id=0-1&p=f&t=UE8eFJAkUkGri0Al-0) bestand heb ik een styleguide gemaakt. En dit toegepast op mijn website. 
@@ -62,15 +62,17 @@ De opdrachtgever heeft een figma bestand doorgestuurd met hun huisstijhl. Op bas
 https://github.com/user-attachments/assets/ce912e29-1739-4353-9079-c69c2b6f1bb7
  
 ### Interactief
-Als interactie heb ik een hamburger menu die je open en dicht kan klappen. Tijdens de usertests kreeg ik feedback dat als het menu open geklapt is een kruisje toegankelijker is, zodat gebruikers weten dat je het kan sluiten. Hetzelfde geld voor het menu icoontje. Het is toegankelijker als er een beschrijving staat, zoals menu, zo weet iedereen dat het een menu is want het is niet vanzelfsprekend dat iedereen weet wat het icoontje van een hamburger menu is.
+Als interactie heb ik een hamburger menu die je open en dicht kan klappen. Tijdens de usertests kreeg ik feedback dat als het menu open geklapt is een kruisje toegankelijker is (feedback), zodat gebruikers weten dat je het kan sluiten. Hetzelfde geld voor het menu icoontje. Het is toegankelijker als er een beschrijving staat, zoals menu (feedforward), zo weet iedereen dat het een menu is want het is niet vanzelfsprekend dat iedereen weet wat het icoontje van een hamburger menu is.
 
 <img width="276" height="700" alt="Scherm­afbeelding 2026-01-21 om 16 34 28" src="https://github.com/user-attachments/assets/b4e2f675-8e29-46d6-8623-153256cbd2cd" />
 
 <img width="276" height="700" alt="Scherm­afbeelding 2026-01-21 om 16 33 09" src="https://github.com/user-attachments/assets/b4b5c981-8de4-430b-8457-33def9e680aa" />
 
-Ik heb ook scroll animatie op de h2, zodat wanneer je scrolt de headings binnenkomen vanaf links (dit werkt niet in firefox) en ik heb dat wanneer je pagina refresht de drie tekstjes een voor een binnen komen.
+Ik heb ook scroll animatie op de h2, zodat wanneer je scrolt de headings binnenkomen vanaf links (dit werkt niet in firefox) en ik heb van de Disney Animatie principes de slow in en slow out gebruikt voor de tekstjes met een pijltje dat dat wanneer je pagina refresht ze een voor een van links in je scherm komen. Als laatst heb een van de UI events animatie toegepast op een button. Als je met je muis over de button gaat dan draait de button een rondje.
 
 https://github.com/user-attachments/assets/10c17831-e2fd-49e3-b554-4ae3f99f0b09
+
+https://github.com/user-attachments/assets/bb14b599-f084-440b-8604-7a17c4e112b8
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
@@ -91,7 +93,7 @@ Voor JavaScript maak ik gebruik van het 3 stappenplan.
 https://github.com/lynnvdbo/the-startup-responsive-interactive-website/blob/e47c90d27f9f0ea9446b90172e95e62541397c35/scripts/script.js#L35-L50
 
 #### Werking van de interactie
-Als eerst heb ik in HTML twee buttons aangemaakt voor het menu met een class. Een is het menu icoontje en de anedere het kruisje. Beide buttons heb ik een hidden gegeven, zodat ik ze met javascript kan laten tonen. 
+Als eerst heb ik in HTML twee buttons aangemaakt voor het menu met een class. Een is het menu icoontje en de andere het kruisje. Beide buttons heb ik een hidden gegeven, zodat ik ze met javascript kan laten tonen. 
 
 https://github.com/lynnvdbo/the-startup-responsive-interactive-website/blob/e47c90d27f9f0ea9446b90172e95e62541397c35/index.html#L18
 https://github.com/lynnvdbo/the-startup-responsive-interactive-website/blob/e47c90d27f9f0ea9446b90172e95e62541397c35/index.html#L21
