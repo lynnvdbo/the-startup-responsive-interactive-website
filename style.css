@@ -212,7 +212,7 @@ header {
 
   @media (width > 720px) {
     position: absolute;
-    top: 20%;
+    top: 27%;
     left: 32%;
     transform: translate(-50%, -50%);
   }
