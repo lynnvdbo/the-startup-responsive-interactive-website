@@ -1,17 +1,20 @@
-Ontwerp en maak een responsive website voor een startup.
-
-De instructies voor deze opdracht staan in: [INSTRUCTIONS.md](https://github.com/fdnd-task/the-startup-responsive-interactieve-website/blob/main/docs/INSTRUCTIONS.md)
-
-# Titel
+# Assist Digital
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
+De afgelopen 3 weken ben ik bezig geweest met het maken van een website voor 270 Degrees. Er was al een design voor dekstop versie en wij kregen als opdracht om voor de mobiele versie een design te maken, want het moet responsive kunnen zijn. Daarbij hebben we als opdracht gekregen om een 3D live viewer toe te voegen op de website.
 
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
+Na aanleiding van het gegeven design is dit het uiteindelijkegeworden: Ik heb er voor gekozen om een 
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
+Klik [hier](https://lynnvdbo.github.io/the-startup-responsive-interactive-website/) voor de website.
+
+
+
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
+
 
 ## Code Conventies
 
