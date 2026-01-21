@@ -51,7 +51,7 @@ Voor het hamburger menu heb ik een 2e breakpoint dat is om 900px, als je het nam
 <img width="620" height="490" alt="Scherm­afbeelding 2026-01-21 om 12 30 06" src="https://github.com/user-attachments/assets/f620d352-4bc0-4300-ac8b-baa7bcf5440c" />
 
 En mijn derde breakpoiht is voor desktop en dat is om 1200px. Qua design veranderd er eigenlijk bijna niets het wordt met name wat groter.
-<img width="1300" height="600" alt="Scherm­afbeelding 2026-01-21 om 12 16 10" src="https://github.com/user-attachments/assets/17f715b2-d1d9-4432-a8f9-cb34b0937259" />
+<img width="1100" height="600" alt="Scherm­afbeelding 2026-01-21 om 12 16 10" src="https://github.com/user-attachments/assets/17f715b2-d1d9-4432-a8f9-cb34b0937259" />
 
 ### Toegankelijk
 Voor de toegankelijkheid van de website heb ik verschillende tests gedaan, waaronder de WCAG audit. Hier kwam uit dat de kleurencontrast die ze voor de knoppen hebben niet goed is.
