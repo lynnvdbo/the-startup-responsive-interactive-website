@@ -533,6 +533,11 @@ h2 {
   color: var(--carolina-blue);
 }
 
+span::selection {
+  color: white;
+  background-color: rgb(3, 113, 238);
+}
+
 
 .assets-implemenatation {
   margin-left: 2em;
