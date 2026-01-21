@@ -11,19 +11,17 @@ klantgerichte aanpak.
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 Het doel is het ontwerpen en bouwen van een website voor 270 Degrees en die dient als inspiratie voor toekomstige (mobile) ontwerpen. Er is al een design voor desktop versie en vanuit dat design mochten wij de mobiele versie maken, omdat het responisve moet zijn. Daarnaast dienen we gebruik te maken van de 270 Degrees 3D model viewer, die minstens een keer op de pagina dient te staan.
 
-Klik [hier](https://lynnvdbo.github.io/the-startup-responsive-interactive-website/) voor de website.
+Check [hier](https://lynnvdbo.github.io/the-startup-responsive-interactive-website/) de website.
 
 ## Inhoudsopgave Readme
 
   * [Beschrijving](#beschrijving)
-  * [Responsive](https://github.com/lynnvdbo/the-startup-responsive-interactive-website/edit/main/README.md#responsive)
-  * [Toegankelijk](#beschrijving)
-  * [Huisstijl](#beschrijving)
-  * [Interactief](#beschrijving)
+  * [Responsive](#responsive)
+  * [Toegankelijk](#toegankelijk)
+  * [Huisstijl](#huisstijl)
+  * [Interactief](#interactief)
   * [Kenmerken](#kenmerken)
-  * [Code Conventies](#beschrijving)
-  * [Bronnen](#bronnen)
-
+  * [Code Conventies](#code-conventies)
 
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
@@ -72,7 +70,7 @@ Als interactie heb ik een hamburger menu die je open en dicht kan klappen. Tijde
 
 Ik heb ook scroll animatie op de h2, zodat wanneer je scrolt de headings binnenkomen vanaf links (dit werkt niet in firefox) en ik heb dat wanneer je pagina refresht de drie tekstjes een voor een binnen komen.
 
------- filmpje nog toevoegen
+https://github.com/user-attachments/assets/10c17831-e2fd-49e3-b554-4ae3f99f0b09
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
@@ -87,7 +85,7 @@ Om nette CSS te schrijven heb ik mijn code genest. Hierdoor heb je minder code e
 
 https://github.com/lynnvdbo/the-startup-responsive-interactive-website/blob/e47c90d27f9f0ea9446b90172e95e62541397c35/style.css#L206-L224
 
-##### JS
+##### JAVASCRIPT
 Voor JavaScript maak ik gebruik van het 3 stappenplan.
 
 https://github.com/lynnvdbo/the-startup-responsive-interactive-website/blob/e47c90d27f9f0ea9446b90172e95e62541397c35/scripts/script.js#L35-L50
