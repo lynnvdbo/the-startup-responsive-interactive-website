@@ -124,6 +124,9 @@ https://github.com/lynnvdbo/the-startup-responsive-interactive-website/blob/2bf7
 De naamgeving schrijf ik met de kebab-case en in lowercase. Dit heb ik overal toegepast zodat de structuur goed en logisch blijft.
 https://github.com/lynnvdbo/the-startup-responsive-interactive-website/blob/c265c7c7a1180e8e6a8e63d9688e1dc0bd6025cd/index.html#L13-L18
 
+### Sprint review
+De sprinte review ging goed. Het design vonden ze mooi en goed geberuik gemaakt van de verchillende breakpoints.
+
 ## Bronnen
 
 ## Licentie
